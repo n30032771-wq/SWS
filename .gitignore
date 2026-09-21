@@ -11,6 +11,11 @@
 # Partial extract inside the split archive (the .z* / .zip volumes are the archive)
 split_SWS/SWS/
 
+# Zip volumes are published on the GitHub Release, not in git (GitHub HTTP 500 on a 4.4 GB push)
+split_SWS/SWS.z*
+split_SWS/SWS.zip
+split_SWS/RELEASE_NOTES.md
+
 # IDE / OS
 .idea/
 **/.idea/
