@@ -1,6 +1,6 @@
 # SWS
 
-Public clone of **New folder** (ontology builder, Jena source, notes) and the **split_SWS** archive volumes.
+Public clone of **New folder** (ontology builder, Jena source, notes).
 
 ```bash
 git clone https://github.com/n30032771-wq/SWS.git
@@ -20,11 +20,13 @@ git -c http.version=HTTP/1.1 clone https://github.com/n30032771-wq/SWS.git
 | `New folder/ontology-builder/` | Java program that reads a PDF with Tika and writes an OWL ontology |
 | `New folder/jena-6.2.0/` | Apache Jena 6.2.0 source tree |
 | `New folder/help/` | Extra notes |
-| `split_SWS/` | Split 7-Zip/ZIP volumes of the full local workspace (`SWS.z01`… and `SWS.zip`) |
+| `split_SWS/` | How to restore the split full-workspace archive |
+
+The split ZIP volumes (`SWS.z01` … `SWS.zip`, about 4.4 GB) are too large for a GitHub git push (GitHub returned HTTP 500). They are attached to the [split-sws release](https://github.com/n30032771-wq/SWS/releases/tag/split-sws) on the same public repo.
 
 ## Restore the split archive
 
-Volumes must stay in the same folder. With [7-Zip](https://www.7-zip.org/):
+Download the release assets into `split_SWS/`, then with [7-Zip](https://www.7-zip.org/):
 
 ```powershell
 cd split_SWS
