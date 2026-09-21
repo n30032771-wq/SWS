@@ -1,0 +1,30 @@
+PREFIX ex:   <http://example.org/ontology#>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd:  <http://www.w3.org/2001/XMLSchema#>
+
+ex:usedFor  rdf:type  owl:ObjectProperty;
+        rdfs:domain  ex:ConvolutionalNeuralNetwork;
+        rdfs:range   ex:ImageRecognition .
+
+ex:ImageRecognition  rdf:type  owl:Class .
+
+ex:ConvolutionalNeuralNetwork
+        rdf:type         owl:Class;
+        rdfs:subClassOf  ex:NeuralNetwork .
+
+ex:NeuralNetwork  rdf:type  owl:Class;
+        rdfs:subClassOf  ex:DeepLearning .
+
+ex:DeepLearning  rdf:type  owl:Class;
+        rdfs:subClassOf  ex:MachineLearning .
+
+ex:MachineLearning  rdf:type  owl:Class;
+        rdfs:subClassOf  ex:ArtificialIntelligence .
+
+ex:ArtificialIntelligence
+        rdf:type         owl:Class;
+        rdfs:subClassOf  ex:Topic .
+
+ex:Topic  rdf:type  owl:Class .
