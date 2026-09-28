@@ -1,5 +1,11 @@
 # Local Maven cache — recreated by Maven after clone
 **/.m2/
+**/.m2.rar
+*.rar
+
+# Local JDK / Tika installs (too large for git; install separately)
+jdk_21/
+tika/
 
 # Build outputs
 **/target/

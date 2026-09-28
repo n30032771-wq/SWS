@@ -1,0 +1,2 @@
+# Do not use Git LFS. A plain `git clone` must get real files
+# with no extra tools. Keep individual files under GitHub's 100 MB limit.
