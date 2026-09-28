@@ -22,7 +22,6 @@ git -c http.version=HTTP/1.1 clone https://github.com/n30032771-wq/SWS.git
 | `equation/mathquill.github.com/` | MathQuill site/demo assets |
 | `equation/help_math/` | Math editor screenshots |
 | `equation/help_onto/` | Ontology/Torch notes |
-| `New folder/jena-6.2.0/` | Apache Jena 6.2.0 source tree |
 
 Local installs such as `jdk_21/`, `tika/`, and Maven `.m2` caches are not in git (too large). Install JDK 21+ and Maven separately; dependencies download from Maven Central.
 

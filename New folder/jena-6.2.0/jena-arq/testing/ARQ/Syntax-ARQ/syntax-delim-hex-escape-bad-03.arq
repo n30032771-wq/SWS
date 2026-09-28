@@ -1,2 +1,0 @@
-PREFIX : <http://example/>
-ASK { :s :p "\u{00000000}" }
